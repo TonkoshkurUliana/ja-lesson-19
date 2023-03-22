@@ -2,6 +2,7 @@ package lesson19.domain;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 
@@ -93,7 +94,7 @@ import java.util.Arrays;
                     ", age=" + age +
                     ", fileName='" + fileName + '\'' +
                     ", fileType='" + fileType + '\'' +
-                    ", filedata=" + Arrays.toString(filedata) +
+                    ", filedata=" + filedata +
                     '}';
         }
     }
